@@ -14,7 +14,7 @@ $conf = array(
             )
         ),
         'strategy' => array(
-            'percentage' => array(3, 7)
+            'percentage' => array(2, 8)
         ),
     ),
     'egg_v2' => array(

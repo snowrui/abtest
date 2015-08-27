@@ -37,14 +37,14 @@ class Abtest {
             }
         }
 
+        $result = $strategy->get_choice($strategy_conf, $data);
         $storage->set($strategy->get_choice_index());
 
-        return $strategy->get_choice($strategy_conf, $data);
+        return $result;
     }
 }
 
-
-/* cli test
+/*
 $res = array();
 for ($i =0; $i < 100; $i ++) {
     $choice = Abtest::get('egg_v2', $conf['egg_v2']);
