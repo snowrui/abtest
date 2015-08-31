@@ -32,7 +32,7 @@ class Abtest_Strategy_Abstract {
         $n = intval(mt_rand() / mt_getrandmax() * 10);
 
         $index = $n % $this->choice_num;
-        $this->choice_index - $index;
+        $this->choice_index = $index;
 
         return $this->choices[$index];
     }
